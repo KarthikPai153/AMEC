@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Search, Globe } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,23 +9,14 @@ const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
 
   const navLinks = [
-    { name: t('nav.home'), path: '#home' },
-    { name: t('nav.about'), path: '#about' },
-    { name: t('nav.institutions'), path: '#institutions' },
-    { name: t('nav.contact'), path: '#contact' },
+    { name: t('nav.home'), path: '/' },
+    { name: t('nav.institutions'), path: '/institutions' },
+    { name: t('nav.contact'), path: '/contact' },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Searching for:', searchQuery);
-  };
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
   };
 
   const toggleLanguage = () => {
@@ -36,26 +28,24 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <button 
-              onClick={() => scrollToSection('#home')}
-              className="flex items-center space-x-2"
-            >
+            <Link to="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
               <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-900 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">U</span>
               </div>
               <span className="text-red-900 font-bold text-lg">USAMEC</span>
-            </button>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <button
+              <Link
                 key={link.name}
-                onClick={() => scrollToSection(link.path)}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
                 className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors duration-200"
               >
                 {link.name}
-              </button>
+              </Link>
             ))}
           </div>
 
@@ -107,13 +97,14 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
             {navLinks.map((link) => (
-              <button
+              <Link
                 key={link.name}
-                onClick={() => scrollToSection(link.path)}
+                to={link.path}
+                onClick={() => setIsOpen(false)}
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50 transition-colors duration-200"
               >
                 {link.name}
-              </button>
+              </Link>
             ))}
             <div className="px-3 py-2">
               <form onSubmit={handleSearch} className="relative">
