@@ -72,7 +72,7 @@ const translations = {
     'nav.search': 'ಹುಡುಕಿ...',
     
     // Hero Section
-    'hero.title': 'ಉಡುಪಿ ಶ್ರೀ ಅಡಮಾರು ಮಠ',
+    'hero.title': 'ಉಡುಪಿ ಶ್ರೀ ಅದಮಾರು ಮಠ',
     'hero.subtitle': 'ಶಿಕ್ಷಣ ಮಂಡಳಿ',
     'hero.description': '24 ಸಂಸ್ಥೆಗಳು ಮತ್ತು 32 ಕಾಲೇಜುಗಳಲ್ಲಿ ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣದ ಮೂಲಕ ಮನಸ್ಸುಗಳನ್ನು ಶಕ್ತಿಗೊಳಿಸುವುದು',
     'hero.institutions': 'ಸಂಸ್ಥೆಗಳು',

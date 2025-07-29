@@ -38,7 +38,7 @@ const About = () => {
                 className="w-64 h-64 rounded-full mx-auto mb-6 object-cover shadow-lg"
               />
               <h3 className="text-xl font-bold text-red-900 mb-2">His Holiness Sri Vishvesha Tirtha Swamiji</h3>
-              <p className="text-orange-500 font-medium">President & Spiritual Head</p>
+              <p className="text-orange-500 font-medium">President</p>
             </div>
             <div>
               <div className="bg-white p-8 rounded-lg shadow-md">

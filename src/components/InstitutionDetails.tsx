@@ -22,7 +22,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
     );
   }
 
-  const institutionInfo = {
+  let institutionInfo = {
     description: `${institution.name} is one of our premier educational institutions, committed to providing quality education and fostering academic excellence.`,
     established: '1985',
     location: 'Udupi, Karnataka',
@@ -31,6 +31,94 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
     programs: ['Undergraduate Programs', 'Postgraduate Programs', 'Research Programs'],
     facilities: ['Modern Classrooms', 'Well-equipped Labs', 'Library', 'Sports Complex'],
   };
+
+  // Custom details for Poornaprajna PU College Adamaru
+  if (institution.name === 'Poornaprajna PU College Adamaru') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['HEPS', 'HEBA', 'ESBA', 'BASCs', 'PCMB', 'PCMS', 'PCMCs'],
+    };
+  }
+
+  // Custom details for Poornaprajna College Udupi
+  if (institution.name === 'Poornaprajna College Udupi') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['BA', 'B.Sc', 'B.Com', 'B.B.A.', 'M.Com', 'M.Sc'],
+    };
+  }
+
+  // Custom details for Poornaprajna Evening College Udupi
+  if (institution.name === 'Poornaprajna Evening College Udupi') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['BCA', 'BA', 'BCom', 'MCom'],
+    };
+  }
+
+  // Custom details for PPEC Sadashivanagar(Pre-Primary , Primary & High School)
+  if (institution.name === 'PPEC Sadashivanagar(Pre-Primary , Primary & High School)') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['Nursery-Grade 10'],
+    };
+  }
+
+  // Custom details for PPEC Sangameshwarpet
+  if (institution.name === 'PPEC SPET(Primary & High School)') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['Nursery-Grade 10'],
+    };
+  }
+
+  // Custom details for PPEC Yelahanka (Pre-primary ,Primary & High School)
+  if (institution.name === 'PPEC Yelahanka (Pre-primary ,Primary & High School)') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['Nursery-Grade 10'],
+    };
+  }
+
+  // Custom details for Poornaprajna Institute of Scientific Research
+  if (institution.name === 'Poornaprajna Institute of Scientific Research') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['Biological Science', 'Theoretical Science', 'Materials Science & Catalysis', 'Center for Foundational Study'],
+    };
+  }
+
+  // Custom details for PPEC SKNagar
+  if (institution.name === 'PPEC SKNagar') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['Nursery - Grade 10'],
+    };
+  }
+
+  // Custom details for Poornaprajna PU College, Udupi
+  if (institution.name === 'Poornaprajna PU College, Udupi') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['BAECs', 'BASCs', 'BASE', 'BASM', 'PCMB', 'PCMCs', 'PCMS'],
+    };
+  }
+
+  // Custom details for Poornaprajna Institute of Management
+  if (institution.name === 'Poornaprajna Institute of Management') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['MBA', 'MCA', 'BBA (Logistic & Supply Chain Management)', 'Poornaprajna Visiting Fellow Programme'],
+    };
+  }
+
+  // Custom details for PPEC Delhi
+  if (institution.name === 'PPEC Delhi') {
+    institutionInfo = {
+      ...institutionInfo,
+      programs: ['Nursery to Grade 10', 'PUC(Science, Commerce, Humanities)'],
+    };
+  }
 
   return (
     <div className="bg-white rounded-lg shadow-md p-8">
@@ -80,7 +168,31 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
             </div>
             <div className="flex items-center text-gray-600">
               <Mail size={16} className="mr-2" />
-              {institutionInfo.email}
+              {institution.name === 'Poornaprajna PU College Adamaru' ? (
+                <a href="mailto:principalpuc@poornaprajnaadamaru.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'PPEC Sadashivanagar(Pre-Primary , Primary & High School)' ? (
+                <a href="mailto:ssng.support@ppec.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'Poornaprajna PU College, Udupi' ? (
+                <a href="mailto:office.udupi@ppuc.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'PPEC SKNagar' ? (
+                <a href="mailto:office.sknagar@ppec.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'Poornaprajna Institute of Scientific Research' ? (
+                <a href="mailto:info@ppisr.res.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'PPEC Indiranagar' ? (
+                <a href="mailto:contact.indiranagar@ppec.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'Poornaprajna Institute of Management' ? (
+                <a href="mailto:office@pim.ac.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'Poornaprajna Evening College Udupi' ? (
+                <a href="mailto:sppecudupi@gmail.com" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'PPEC Yelahanka (Pre-primary ,Primary & High School)' ? (
+                <a href="mailto:contact.yelahanka@ppec.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'Poornaprajna College Udupi' ? (
+                <a href="mailto:office@ppc.edu.in" className="text-blue-600 hover:underline">MAIL</a>
+              ) : institution.name === 'PPEC Delhi' ? (
+                <a href="mailto:ppps2009@gmail.com" className="text-blue-600 hover:underline">MAIL</a>
+              ) : (
+                <a href={`mailto:${institutionInfo.email}`} className="text-blue-600 hover:underline">{institutionInfo.email}</a>
+              )}
             </div>
           </div>
         </div>
@@ -94,18 +206,6 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
               </li>
             ))}
           </ul>
-        </div>
-      </div>
-
-      <div>
-        <h4 className="font-bold text-red-900 mb-2">Facilities</h4>
-        <div className="grid grid-cols-2 gap-2">
-          {institutionInfo.facilities.map((facility, index) => (
-            <div key={index} className="flex items-center text-gray-600">
-              <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-              {facility}
-            </div>
-          ))}
         </div>
       </div>
     </div>

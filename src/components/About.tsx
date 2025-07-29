@@ -2,57 +2,112 @@ import React from 'react';
 import { Users, Award, BookOpen, Calendar, MapPin, Heart } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Swami from '../assets/images/swami.jpg';
+import { Swamiji } from '../assets/images/image';
 
 const About = () => {
   const { t } = useLanguage();
 
   const managementTeam = [
     {
-      name: 'His Holiness Sri Vishvesha Tirtha Swamiji',
-      position: 'President & Spiritual Head',
+      name: 'H.H.  Shree Eeshapriya Theertha Swamiji',
+      position: 'President',
       image: Swami,
       description: 'Guiding the institution with spiritual wisdom and educational vision',
     },
     {
-      name: 'Dr. Raghavendra Rao',
-      position: 'Vice President & Academic Head',
+      name: 'Sri N.B. Bhat',
+      position: 'Vice President',
       image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Leading academic excellence and institutional development',
     },
     {
-      name: 'Prof. Sunitha Hegde',
-      position: 'Registrar & Administrative Head',
+      name: 'Dr. Ananthapadmanabha Bhat',
+      position: 'Hon. Secretary',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Overseeing administrative operations and student services',
     },
     {
-      name: 'Dr. Mohan Kumar',
-      position: 'Finance Director',
+      name: 'Sri G.V. Krishna',
+      position: 'Hon. Treasurer',
+      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Overseeing administrative operations and student services',
+    },
+    {
+      name: 'Dr. K. Srihari',
+      position: 'Member',
       image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Managing financial planning and resource allocation',
     },
     {
-      name: 'Prof. Lakshmi Nair',
-      position: 'Research Director',
+      name: 'Sri. P. Srinivas Rao',
+      position: 'Member',
       image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Promoting research initiatives and innovation',
     },
     {
-      name: 'Mr. Suresh Shetty',
-      position: 'Infrastructure Head',
+      name: 'Sri. Ashok Harnahalli',
+      position: 'Member',
+      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Developing and maintaining world-class facilities',
+    },
+    {
+      name: 'Sri. S.V. Manjunath',
+      position: 'Member',
+      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Developing and maintaining world-class facilities',
+    },
+    {
+      name: 'Sri. S.K. Bhat',
+      position: 'Member',
+      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Developing and maintaining world-class facilities',
+    },
+    {
+      name: 'Sri K. Subramanya',
+      position: 'Member',
+      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Developing and maintaining world-class facilities',
+    },
+    {
+      name: 'Justice Sri. N Santhosh Hegde',
+      position: 'Member',
+      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Developing and maintaining world-class facilities',
+    },
+    {
+      name: 'Sri. Mahabaleshwara Bhat',
+      position: 'Member',
+      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
+      description: 'Developing and maintaining world-class facilities',
+    },
+    {
+      name: 'Sri. Subramanya Keshav Bhat',
+      position: 'Member',
       image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=300',
       description: 'Developing and maintaining world-class facilities',
     },
   ];
 
   const milestones = [
-    { year: '1985', event: 'Foundation of USAMEC with 3 institutions' },
-    { year: '1995', event: 'Expansion to 10 institutions across Karnataka' },
-    { year: '2005', event: 'Introduction of professional courses and research programs' },
-    { year: '2010', event: 'Achievement of autonomous status for key institutions' },
-    { year: '2015', event: 'International collaborations and exchange programs' },
-    { year: '2020', event: 'Digital transformation and online learning initiatives' },
-    { year: '2024', event: 'Current strength of 24 institutions and 32 colleges' },
+    { year: '1950', event: 'Poornaprajna Pre-University College, Admar' },
+    { year: '1960', event: 'Poornaprajna College, Udupi' },
+    { year: '1962', event: 'PPEC Dahisar(E), Mumbai' },
+    { year: '1966', event: 'Poornaprajna Evening College, Udupi' },
+    { year: '1968', event: 'Ganapathi High School, Padubidri' },
+    { year: '1969', event: 'PPEC Sadashiva Nagar, Bangalore' },
+    { year: '1978', event: 'Poornaprajna English Nursery and Primary School, Aldur' },
+    { year: '1978', event: 'PPEC, Sangameshwarpet' },
+    { year: '1980', event: 'PPEC Belur, hassan' },
+    { year: '1982', event: 'PPEC, Bhadravathi' },
+    { year: '1982', event: 'PPEC Yalahanka, Banglore' },
+    { year: '1984', event: 'PPEC Indiranagar, Banglore' },
+    { year: '1987', event: 'Poornaprajna Public School, New Delhi' },
+    { year: '1988', event: 'Widia Poornaprajna School, Banglore' },
+    { year: '1998', event: 'Poornaprajna Institute of Scientific Research, Banglore' },
+    { year: '2001', event: 'PPEC Sri Krishnanagar, Banglore' },
+    { year: '2001', event: 'Poornaprajna P.U. College, Udupi' },
+    { year: '2006', event: 'Poornaprajna Institute of Management, Udupi' },
+    { year: '2009', event: 'Poornaprajna Institute of Faculty Improvement, Banglore' },
   ];
 
   return (
@@ -74,33 +129,36 @@ const About = () => {
             <h2 className="text-3xl font-bold text-red-900 mb-4">{t('about.president.title')}</h2>
           </div>
           
+      
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center">
               <img
                 src={Swami}
-                alt="His Holiness Sri Vishvesha Tirtha Swamiji"
+                alt="His Holiness Sri Eeshapriya Theertha Swamiji"
                 className="w-64 h-100 rounded-full mx-auto mb-6 object-cover shadow-lg"
               />
-              <h3 className="text-xl font-bold text-red-900 mb-2">His Holiness Sri Vishvesha Tirtha Swamiji</h3>
+              <h3 className="text-xl font-bold text-red-900 mb-2">His Holiness Sri Eeshapriya Theertha Swamiji</h3>
               <p className="text-orange-500 font-medium">President & Spiritual Head</p>
             </div>
             <div>
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <Heart className="text-orange-500 mb-4" size={40} />
                 <p className="text-gray-600 mb-6 italic text-lg leading-relaxed">
-                  "Education is the foundation upon which we build our future. At USAMEC, we are committed to 
-                  providing not just academic knowledge, but also moral and spiritual guidance that shapes 
-                  character and builds leaders for tomorrow."
+                  "Nowadays the important aim of education has become to prepare the students for their examination, encouraging them to compete with one another to score high mark and finally to get good and lucrative jobs. But things were not like this in the past. The students had respect to their teachers in spite of the punishments they used to get from them. There was close and friendly relation between the teachers and students. In my opinion teachers should not teach the students only to make them pass the examinations. Importance should be given for the acquisition of knowledge. The education should aim at all-round development of the students. This should be the primary aim of education.
+
+"                
                 </p>
-                <p className="text-gray-600 mb-4">
-                  Our journey began with a simple yet profound vision: to create an educational ecosystem 
-                  that nurtures both the mind and the soul. Today, as we celebrate four decades of excellence, 
-                  I am proud to see our alumni making significant contributions across the globe.
+                
+                <p className="text-gray-800 mb-4 font-bold">
+                  - H.H. Sri Eeshapriya Theertha Swamiji.
                 </p>
+                {/*
                 <p className="text-gray-600">
                   We remain committed to our founding principles while embracing innovation and modern 
                   pedagogical approaches to prepare our students for the challenges of the 21st century.
                 </p>
+                */}
               </div>
             </div>
           </div>
