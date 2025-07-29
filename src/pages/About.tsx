@@ -45,7 +45,7 @@ const About = () => {
                 <Heart className="text-orange-500 mb-4" size={40} />
                 <p className="text-gray-600 mb-6 italic text-lg leading-relaxed">
                   "Education is the foundation upon which we build our future. At USAMEC, we are committed to 
-                  providing not just academic knowledge, but also moral and spiritual guidance that shapes 
+                  providing not just academic knowledge, but also moral and guidance that shapes 
                   character and builds leaders for tomorrow."
                 </p>
                 <p className="text-gray-600 mb-4">
