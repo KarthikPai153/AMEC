@@ -122,7 +122,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       ...institutionInfo,
       established: '2001',
       location: 'Sri Krishna Nagar, Banglore',
-      email: 'office.sknagar@ppec.edu.in',
+      email: `office.sknagar@ppec.edu.in`,
       programs: ['Grade 1 to Grade 10'],
     };
   }
@@ -182,7 +182,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       established: '1962',
       location: 'Dahisar East, Mumbai',
       phone: '022-28284831',
-      email: 'ppecmum.primary@ppec.edu.in',
+      email: `ppecmum.primary@ppec.edu.in`,
       programs: ['Nursery','Jr & Sr. kg','Std I-V','std V-X'],
     };
   }
@@ -194,7 +194,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       established: '1978',
       location: 'Aldur',
       phone: '08262250818',
-      email: 'contact.aldur@ppec.edu.in',
+      email: `contact.aldur@ppec.edu.in`,
       programs: ['Nursery','Primary','High School'],
     };
   }
@@ -206,7 +206,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       established: '1980',
       location: 'Belur, Hassan',
       phone: '08177222346',
-      email: 'contact.belur@ppec.edu.in',
+      email: `contact.belur@ppec.edu.in`,
       programs: ['Primary','High School'],
     };
   }
@@ -218,7 +218,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       established: '1982',
       location: 'Bhadravathi',
       phone: '08282-266244',
-      email: 'ppecbdvt.@yahoo.in',
+      email: `ppecbdvt.@yahoo.in`,
       programs: ['Nursery','I-V','VI-VII','VIII'],
     };
   }
@@ -230,7 +230,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       established: '1984',
       location: 'Indiranagar, Banglore',
       phone: '08025292930',
-      email: 'contact.indiranagar@ppec.edu.in',
+      email: `contact.indiranagar@ppec.edu.in`,
       programs: ['Nursery','I-V','VI-VII','VIII-X'],
     };
   }
@@ -242,7 +242,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       established: '1988',
       location: 'Widia Banglore',
       phone: '080-28391399',
-      email: 'contact.wpps@ppec.edu.in',
+      email: `contact.wpps@ppec.edu.in`,
       programs: ['Prep-I,II','Class I-X'],
     };
   }
