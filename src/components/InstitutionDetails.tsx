@@ -36,6 +36,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'Poornaprajna PU College Adamaru') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1950',
+    location: 'Adamaru',
+    phone: '8762185171 / 9448720705',
+    email: `principalpuc@poornaprajnaadamaru.edu.in`,
       programs: ['HEPS', 'HEBA', 'ESBA', 'BASCs', 'PCMB', 'PCMS', 'PCMCs'],
     };
   }
@@ -44,6 +48,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'Poornaprajna College Udupi') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1960',
+    location: 'Udupi, Karnataka',
+    phone: '+91 820 2520459',
+    email: `office@ppc.edu.in`,
       programs: ['BA', 'B.Sc', 'B.Com', 'B.B.A.', 'M.Com', 'M.Sc'],
     };
   }
@@ -52,6 +60,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'Poornaprajna Evening College Udupi') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1966',
+    location: 'Udupi, Karnataka',
+    phone: '+91 820 2520743',
+    email: `sppecudupi@gmail.com`,
       programs: ['BCA', 'BA', 'BCom', 'MCom'],
     };
   }
@@ -60,6 +72,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'PPEC Sadashivanagar(Pre-Primary , Primary & High School)') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1969',
+    location: 'Sadashivanagar, Banglore',
+    phone: "080-23618187 (High School)",
+    email: `ssng.support@ppec.edu.in`,
       programs: ['Nursery-Grade 10'],
     };
   }
@@ -68,6 +84,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'PPEC SPET(Primary & High School)') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1978',
+    location: 'Sangameshwarpet',
+    phone: "08262200080",
+    email: `contact.spet@ppec.edu.in`,
       programs: ['Nursery-Grade 10'],
     };
   }
@@ -76,6 +96,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'PPEC Yelahanka (Pre-primary ,Primary & High School)') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1982',
+    location: 'Yelahanka, Banglore',
+    phone: "080 4203 3482",
+    email: `contact.yelahanka@ppec.edu.in`,
       programs: ['Nursery-Grade 10'],
     };
   }
@@ -84,6 +108,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'Poornaprajna Institute of Scientific Research') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1998',
+    location: 'Banglore',
+    phone: "080-23611836",
+    email: `info@ppisr.res.in`,
       programs: ['Biological Science', 'Theoretical Science', 'Materials Science & Catalysis', 'Center for Foundational Study'],
     };
   }
@@ -103,6 +131,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'Poornaprajna PU College, Udupi') {  
     institutionInfo = {
       ...institutionInfo,
+      established: '2001',
+    location: 'Udupi',
+    phone: "9880922626",
+    email: `office.udupi@ppuc.edu.in`,
       programs: ['BAECs', 'BASCs', 'BASE', 'BASM', 'PCMB', 'PCMCs', 'PCMS'],
     };
   }
@@ -111,6 +143,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'Poornaprajna Institute of Management') {
     institutionInfo = {
       ...institutionInfo,
+      established: '2006',
+    location: 'Udupi',
+    phone: "9343348392",
+    email: `office@pim.ac.in`,
       programs: ['MBA', 'MCA', 'BBA (Logistic & Supply Chain Management)', 'Poornaprajna Visiting Fellow Programme'],
     };
   }
@@ -119,6 +155,10 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   if (institution.name === 'PPEC Delhi') {
     institutionInfo = {
       ...institutionInfo,
+      established: '1987',
+    location: 'Vasant Kunj, New Delhi',
+    phone: "9821571372",
+    email: `ppps2009@gmail.com`,
       programs: ['Nursery to Grade 10', 'PUC(Science, Commerce, Humanities)'],
     };
   }
@@ -129,6 +169,90 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       ...institutionInfo,
       established: '1968',
       location: 'Padubidri',
+      phone: '',
+      email: '',
+      programs: [],
+    };
+  }
+
+  // Custom details for PPEC Dahisar mumbai
+  if (institution.name === 'PPEC Mumbai') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1962',
+      location: 'Dahisar East, Mumbai',
+      phone: '022-28284831',
+      email: 'ppecmum.primary@ppec.edu.in',
+      programs: ['Nursery','Jr & Sr. kg','Std I-V','std V-X'],
+    };
+  }
+
+  // Custom details for PPEC Aldur
+  if (institution.name === 'PPEC Aldur') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1978',
+      location: 'Aldur',
+      phone: '08262250818',
+      email: 'contact.aldur@ppec.edu.in',
+      programs: ['Nursery','Primary','High School'],
+    };
+  }
+
+  // Custom details for PPEC Belur
+  if (institution.name === 'PPEC BElur') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1980',
+      location: 'Belur, Hassan',
+      phone: '08177222346',
+      email: 'contact.belur@ppec.edu.in',
+      programs: ['Primary','High School'],
+    };
+  }
+
+  // Custom details for PPEC Bhadravathi
+  if (institution.name === 'PPEC Bhadravathi') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1982',
+      location: 'Bhadravathi',
+      phone: '08282-266244',
+      email: 'ppecbdvt.@yahoo.in',
+      programs: ['Nursery','I-V','VI-VII','VIII'],
+    };
+  }
+
+  // Custom details for PPEC Indiranagar
+  if (institution.name === 'PPEC Indiranagar') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1984',
+      location: 'Indiranagar, Banglore',
+      phone: '08025292930',
+      email: 'contact.indiranagar@ppec.edu.in',
+      programs: ['Nursery','I-V','VI-VII','VIII-X'],
+    };
+  }
+
+  // Custom details for PPEC Widia 
+  if (institution.name === 'PPEC Widia') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1988',
+      location: 'Widia Banglore',
+      phone: '080-28391399',
+      email: 'contact.wpps@ppec.edu.in',
+      programs: ['Prep-I,II','Class I-X'],
+    };
+  }
+
+  // Custom details for PPC Faculty Development Program
+  if (institution.name === 'PPC Faculty Development Program') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '2009',
+      location: 'Udupi',
       phone: '',
       email: '',
       programs: [],
