@@ -23,7 +23,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   }
 
   let institutionInfo = {
-    description: `${institution.name} is one of our premier educational institutions, committed to providing quality education and fostering academic excellence.`,
+    //description: `${institution.name} is one of our premier educational institutions, committed to providing quality education and fostering academic excellence.`,
     established: '1985',
     location: 'Udupi, Karnataka',
     phone: '+91 820 2570000',
@@ -175,7 +175,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
     };
   }
 
-  // Custom details for PPEC Dahisar mumbai
+  // Custom details for PPEC Dahisar Mumbai
   if (institution.name === 'PPEC Mumbai') {
     institutionInfo = {
       ...institutionInfo,
@@ -188,7 +188,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   }
 
   // Custom details for PPEC Aldur
-  if (institution.name === 'PPEC Aldur') {
+  if (institution.name === 'PPEC Aldur(Primary & High School)') {
     institutionInfo = {
       ...institutionInfo,
       established: '1978',
@@ -200,7 +200,7 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
   }
 
   // Custom details for PPEC Belur
-  if (institution.name === 'PPEC BElur') {
+  if (institution.name === 'PPEC Belur(Nursary ,Primary & High School)') {
     institutionInfo = {
       ...institutionInfo,
       established: '1980',
@@ -258,6 +258,80 @@ const InstitutionDetails: React.FC<InstitutionDetailsProps> = ({ institution }) 
       programs: [],
     };
   }
+ 
+  // Custom details for SBVP
+  if (institution.name === 'SBVP Higher Primary School') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1921',
+    location: 'Padubidri',
+    phone: "NA",
+    email: `NA`,
+      programs: ['Grade 1-7'],
+    };
+  }
+
+  // Custom details for Poornaprajna High School Adamaru
+  if (institution.name === 'Poornaprajna High School Adamaru') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1950(Kannada Medium) 2007(English Medium)',
+    location: 'Adamaru',
+    phone: "9900407155, 9480724722",
+    email: `hmemhs@poornaprajnaadamaru.edu.in`,
+      programs: ['Class 5- Class 10'],
+    };
+  }
+
+  // Custom details for PPEC Adamaru
+  if (institution.name === 'PPEC Adamaru(Primary & Pre-Primary)') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1950',
+    location: 'Adamaru',
+    phone: "9480724722, 9901290413",
+    email: `ppps.poornaprajnaadamaru.edu.in`,
+      programs: ['Pre-Primary(LKG & UKG)','Primary(Grade 1-4)'],
+    };
+  }
+
+  // Custom details for Widia PU
+  if (institution.name === 'Widia Poornaprajna PU College') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '2019',
+    location: 'Widia, Banglore',
+    phone: "7022622639",
+    email: `office.wppuc@ppec.edu.in`,
+      programs: ['PCMB','PCMC','CEBA','SEBA'],
+    };
+  }
+
+  // Custom details for PPEC Bhadravathi
+  if (institution.name === 'PPEC Bhadravathi') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1982',
+    location: 'Bhadravathi, shimoga',
+    phone: "08282-266244",
+    email: `ppecbdvt@yahoo.in`,
+      programs: ['LKG,UKG','Grade 1-5','Grade 6-7','Grade 8'],
+    };
+  }
+
+  // Custom details for PPUC SPet
+  if (institution.name === 'Poornaprajna PU College, Sangameshwarpet') {
+    institutionInfo = {
+      ...institutionInfo,
+      established: '1980',
+    location: 'Sangameshwarpet,Chikamagalur',
+    phone: "8618783275",
+    email: `office.spet@ppuc.edu.in`,
+      programs: ['EBAC','PCMB','PCMC'],
+    };
+  }
+
+  
 
   return (
     <div className="bg-white rounded-lg shadow-md p-8">
